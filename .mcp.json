@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "codex-chatgpt-bridge": {
-      "command": "node",
-      "args": ["${PLUGIN_ROOT}/dist/mcp.mjs"]
-    }
-  }
-}

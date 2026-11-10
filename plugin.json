@@ -1,0 +1,8 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "dot-pro",
+  "version": "1.0.0",
+  "description": "Coordinate ChatGPT Pro, Dot execution and verified repository delivery through native Codex browser control.",
+  "repository": "https://github.com/AshWood97/dot-pro",
+  "license": "MIT"
+}
