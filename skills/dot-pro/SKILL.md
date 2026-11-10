@@ -1,6 +1,6 @@
 ---
 name: dot-pro
-description: Coordinate ChatGPT web Pro direct Git delivery with Dot and local Codex for authorized work. Use for requested Pro or Dot collaboration, compatible Azure Git delivery, ChatGPT Deep Research, or website image workflows. Inspecting this skill does not dispatch a task.
+description: Coordinate ChatGPT web Pro, Dot and local Codex for authorized Git delivery, review and integration, or requested collaboration, Deep Research and website image workflows. Inspecting this skill does not dispatch a task.
 ---
 
 # dot-pro
@@ -15,9 +15,18 @@ Bind each action to its selected tab or desktop session and pair Dot with a Pro 
 
 ## Deliver authorized code work
 
-When the user authorizes compatible Azure Git delivery and the selected Pro conversation has the Git MCP connected, prefer Pro's direct path: select the fixed manifest, read relevant source, make the scoped UTF-8 changes, commit on the task fork, and create or update its PR. Pro mode alone does not establish a connection or write access. Read [Git MCP reference](references/git-mcp.md) for its exact tools, manifest handling and recovery. The service and its URL must be supplied and approved by the user; this skill does not provide or deploy a backend.
+When the user authorizes compatible Azure Git delivery and the selected Pro conversation has the Git MCP connected, prefer Pro's direct path: select the fixed manifest, read relevant source and commit scoped UTF-8 changes on the task fork. Pro mode alone does not establish a connection or write access. Read [Git MCP reference](references/git-mcp.md) for its tools, batch merge, manifest handling and recovery. The service and its URL must be supplied and approved by the user; this skill does not provide or deploy a backend.
 
-Use Dot for tasks needing an actual execution environment, business checks, non-text changes, or an existing accepted long-running task. The described MCP has no shell, test/build execution, Issue management, merge or deployment. A PR or tool response is not proof of testing, company receipt or release. Codex verifies the actual branch, PR, changes and reported checks, then performs only the integration authorized by the user and project rules.
+Use Dot for tasks needing an actual execution environment, business checks, non-text changes, or an existing accepted long-running task. The described MCP supports controlled same-fork batch merges, but no arbitrary shell, test/build execution, Issue management, upstream merge or deployment. A PR or tool response is not proof of testing, company receipt or release.
+
+For a requested completed code delivery, use this default path within the user's authorization:
+
+1. Have cloud authors complete independent scoped implementations and a different Pro conversation review each author's actual changes. Return concrete findings to the original author for fixes; the reviewer checks fixes and remaining affected changes. Select a lead Pro reviewer and a single Dot integrator from the available accounts, preserving the user's assignments. Use a reviewer conversation that did not author the implementation; if the lead Pro wrote or supplied that code, choose another available Pro conversation. Independence concerns the authoring and review sessions, not separate Gitea users.
+2. Have the integrator reconcile shared files and cumulative work without applying the same delta twice, then run necessary checks in the existing environment. An independent Pro reviews the integration and later changes incrementally. Do not impose a fixed number of review rounds or repeat a full review without a reason.
+3. Record an approval and actual checks for the precise child PR head and batch base, and actually merge each approved child into the same-fork batch. A changed head or base requires fresh review of affected changes. Open one batch summary PR to the fixed manifest's upstream base and obtain an approval for its exact current head and base, covering integration changes not already reviewed. Treat the upstream as a synchronization mirror and do not merge it through this flow.
+4. Codex uses the available local company integration process to mechanically receive the approved summary delta, checking the fixed manifest, approval, exact head/base and actual result. If company PR creation and final merge are authorized and supported, complete them locally; do not re-review each cloud PR. Return complex code questions, conflicts, protected paths, manual ports and relevant company baseline changes to the cloud for work and review. Do not reuse an approval after its inputs change. Company credentials stay local.
+
+Where an authorized small-model worker is already available, use it for routine, bounded local CLI receipt/status commands; keep substantive code decisions with the appropriate Pro. Do not start a separate orchestration solely for that routing. If the necessary batch or local receipt capability is missing, report the actual limitation rather than claiming the completed path ran.
 
 If Pro's connection or required tools are unavailable, report the precise limitation. If setup is authorized, connect the approved service; otherwise give Pro the authorized source excerpts, paths and revision for a concrete patch, then have Dot apply, check and deliver it where authorized. If Pro itself is unavailable, say so and continue only through an authorized workable path. Keep consequential blockers and shared-interface questions in the same Pro conversation with the actual error and current diff; do not repeat resolved questions or mandate an extra review.
 
